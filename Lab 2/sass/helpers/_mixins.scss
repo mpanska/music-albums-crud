@@ -1,6 +1,4 @@
 //-------------Breakpoints---------------
-//at this point and bigger use this styles:
-//sass map for breakpoints
 //640px, 1024px, 1400 and up
 $breakpoints-up:("medium": "40em", "large": "64em", "xlarge": "87.5em");
 
@@ -17,5 +15,48 @@ $breakpoints-down:("small": "39.9375em","medium": "63.9375em", "large":  "87.437
 @mixin breakpoint-down($size) {
     @media(max-width: map-get($breakpoints-down, $size)){
         @content;  
+    }
+}
+
+
+@mixin dark-theme($theme){
+    @if $theme{
+        background-color: darken($primary-color, 100%);
+        color: lighten($black, 100%);
+
+        footer{
+            background-color: $red;
+            color: lighten($black, 100%);
+        }
+
+        .link-hover {
+            &:before {
+                background: lighten($black, 100%);
+            }
+        }
+        
+        .blogs-heading{
+            background: darken(rgb(231, 231, 231), 60%);
+        }
+        
+        .white-box{
+            color: $black;
+        }      
+        
+        .contact-container{
+            background-color: darken($primary-color, 75%);
+        }
+
+        #first-section{
+            background-color: darken(rgb(231, 231, 231), 60%);
+        }
+        
+        #second-section{
+            background-color: darken(rgb(231, 231, 231), 70%);
+        }
+        
+        #third-section{
+            background-color: darken(rgb(231, 231, 231), 75%);
+        }
     }
 }

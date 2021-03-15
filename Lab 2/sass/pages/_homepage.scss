@@ -74,7 +74,23 @@
     &:hover{
         padding-left: 10px;
         background-color: $red;
-        color: $white;
+        color: $primary-color;
         border-radius: 6px;
+    }
+}
+
+#stylechange{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+    border: none;
+    font-family: $body-font;
+    font-size: 18px;
+    font-weight: weight(bold);
+
+    &:hover{
+        transition: 0.4s ease-out;
+        background-color: $red;
+        color: $primary-color;
     }
 }

@@ -13,3 +13,6 @@ img{
     width: 300px;
 }
 
+.dark{
+    @include dark-theme(true);
+}
