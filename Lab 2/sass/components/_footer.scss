@@ -3,26 +3,25 @@ footer{
     padding: 20px;
     color: $primary-color;
 
-    .footer-right-left{
-        display: flex;
-        justify-content: space-between;
-    }
+}
 
-    .social-media{
-        
-        .footer-images{
-            margin-top: 10px;
-        }
+.footer-right-left{
+    display: flex;
+    justify-content: space-between;
+}
 
-        img {
-            width: 30px;
-            transition: 0.3s ease-in-out 0s;
-            padding: 10px;
-            &:hover{
-                transform: translateY(-0.3125rem);
-            }
+
+.social-media{
+    img {
+        width: 30px;
+        transition: 0.3s ease-in-out 0s;
+        padding: 10px;
+        &:hover{
+            transform: translateY(-0.3125rem);
         }
     }
+}
 
-   
+.footer-images{
+    margin-top: 10px;
 }

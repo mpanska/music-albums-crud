@@ -60,19 +60,19 @@ nav ul {
   justify-content: space-evenly;
 }
 
-a {
+nav a {
   position: relative;
   color: inherit;
   text-decoration: none;
 }
 
-a:before {
+nav a:before {
   content: '';
   position: absolute;
   transition: transform .5s ease;
 }
 
-a:after {
+nav a:after {
   content: '';
   position: absolute;
   transition: transform .5s ease;
@@ -101,23 +101,23 @@ footer {
   color: white;
 }
 
-footer .footer-right-left {
+.footer-right-left {
   display: flex;
   justify-content: space-between;
 }
 
-footer .social-media .footer-images {
-  margin-top: 10px;
-}
-
-footer .social-media img {
+.social-media img {
   width: 30px;
   transition: 0.3s ease-in-out 0s;
   padding: 10px;
 }
 
-footer .social-media img:hover {
+.social-media img:hover {
   transform: translateY(-0.3125rem);
+}
+
+.footer-images {
+  margin-top: 10px;
 }
 
 .gray-image img {
